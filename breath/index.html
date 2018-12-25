@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 100%;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .bg-img {
+            width: 100%;
+        }
+
+        .bg-img-light {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: breath 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes breath {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img class="bg-img-light" src="./assets/p1.png" alt="" srcset="">
+        <img class="bg-img" src="./assets/p1l.png" alt="" srcset="">
+    </div>
+    <div class="box">
+        <img class="bg-img-light" src="./assets/p2.png" alt="" srcset="">
+        <img class="bg-img" src="./assets/p2l.png" alt="" srcset="">
+    </div>
+    <div class="box">
+        <img class="bg-img-light" src="./assets/p3.png" alt="" srcset="">
+        <img class="bg-img" src="./assets/p3l.png" alt="" srcset="">
+    </div>
+    <div class="box">
+        <img class="bg-img-light" src="./assets/p4.png" alt="" srcset="">
+        <img class="bg-img" src="./assets/p4l.png" alt="" srcset="">
+    </div>
+</body>
+
+</html>
